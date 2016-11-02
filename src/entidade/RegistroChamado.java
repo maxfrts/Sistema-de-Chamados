@@ -13,6 +13,8 @@ public class RegistroChamado implements Serializable {
     private String assunto;
     private Tecnico tecnico;
     private Chamado chamado;
+    
+    public RegistroChamado(){}
 
     public RegistroChamado(String assunto, Chamado chamado, Tecnico tecnico) {
         Calendar c = Calendar.getInstance();

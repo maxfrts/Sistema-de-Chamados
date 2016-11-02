@@ -8,6 +8,8 @@ public class Empresa implements Serializable {
     private long numeroContrato;
     private String nomeEmpresa;
 
+    public Empresa() {}
+    
     public Empresa(long numeroContrato, String nomeEmpresa) {
         this.numeroContrato = numeroContrato;
         this.nomeEmpresa = nomeEmpresa;
