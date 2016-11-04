@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package controle;
 
 import Persistencia.ChamadoDAO;
@@ -11,6 +15,10 @@ import entidade.RegistroChamado;
 import entidade.Tecnico;
 import java.util.Collection;
 
+/**
+ *
+ * @author Richard
+ */
 public class ControleChamados {
 
     private TelaCadastroChamado telaChamado;
@@ -132,30 +140,30 @@ public class ControleChamados {
             			break;
             			
             		case 4 :
-            			prioridade = "Crítica";
+            			prioridade = "Cr�tica";
             			break;
             	}
                 relatorio += "\n" + "--------" + "\nData de abertura do chamado: " +
                     	ref.getData() + 
-                    	"\nHorário de abertura do chamado: " + ref.getHora() + 
-                    	"\nTítulo do chamado: " + ref.getTitulo() + 
-                    	"\nCódigo do chamado: " + ref.getCodigo() +
-                    	"\nDescrição do chamado: " + ref.getDescricao() + 
+                    	"\nHor�rio de abertura do chamado: " + ref.getHora() + 
+                    	"\nT�tulo do chamado: " + ref.getTitulo() + 
+                    	"\nC�digo do chamado: " + ref.getCodigo() +
+                    	"\nDescri��o do chamado: " + ref.getDescricao() + 
                     	"\nPrioridade do chamado: " + prioridade + 
                     	"\nStatus do chamado: " + ref.getStatus() + 
                     	"\nTipo de problema do chamado: " + ref.getTipoProblema() + 
-                    	"\nTécnico responsável pelo chamado: " + ref.getTecnico() + 
+                    	"\nT�cnico respons�vel pelo chamado: " + ref.getTecnico() + 
                     	"\nCliente requisitor do chamado: " + ref.getCliente() + "\n";
                 
                 for(RegistroChamado rc : registros){
                 	if(rc.getChamado().equals(ref)){
-                		relatorio += "\nRelatório de registros de acompanhamento:" + 
+                		relatorio += "\nRelat�rio de registros de acompanhamento:" + 
                 	"\nData: " + rc.getData() + 
                 	"\nHora: " + rc.getHora() + 
                 	"\nAssunto: " + rc.getAssunto() +
-                	"\nTécnico responsável: " + rc.getTecnico().getNome() +
+                	"\nT�cnico respons�vel: " + rc.getTecnico().getNome() +
                 	"\nCausa do problema: " + ref.getCausaProblema() + 
-                	"\nSolução do problema: " + ref.getSolucaoProblema();
+                	"\nSolu��o do problema: " + ref.getSolucaoProblema();
                 	}
                 }
             }
@@ -182,7 +190,7 @@ public class ControleChamados {
 
         String detalhes = "\n" + "--------" + "\n" + "Data de abertura do chamado: "
                 + c.getData() + "\n" + "Hororio de abertura do chamado: " + c.getHora() + "\n"
-                + "Titulo do chamado: " + c.getTitulo() + "\n" + "Descriï¿½ï¿½o do chamado: " + c.getDescricao() + "\n"
+                + "Titulo do chamado: " + c.getTitulo() + "\n" + "Descri��o do chamado: " + c.getDescricao() + "\n"
                 + "Prioridade do chamado" + c.getPrioridade() + "\n" + "Status do chamado: " + c.getStatus() + "\n"
                 + "Tipo de problema do chamado: " + c.getTipoProblema() + "\n" + "Tecnico responsovel pelo chamado: "
                 + c.getTecnico() + "\n" + "Cliente requisitor do chamado: " + c.getCliente() + "\n";

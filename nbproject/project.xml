@@ -8,7 +8,7 @@
                 <root id="src.src.dir"/>
             </source-roots>
             <test-roots>
-                <root id="test.entidade.dir"/>
+                <root id="test.teste.dir"/>
             </test-roots>
         </data>
     </configuration>

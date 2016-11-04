@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package apresentacao;
 
 import Persistencia.EmpresaDAO;
@@ -20,8 +25,15 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+/**
+ *
+ * @author Richard
+ */
 public class TelaCadastroCliente extends JFrame {
 
+    /**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private ControleClientes ctrCliente;
     private EmpresaDAO empresaDAO;

@@ -1,16 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package entidade;
 
 import java.io.Serializable;
 
+/**
+ *
+ * @author Richard
+ */
 public class ClienteEmpresa extends Pessoa implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private Integer codigo;
     private Empresa empresa;
     private long cpf;
-
+    
     public ClienteEmpresa(){
-        
+ 
     }
     
     public ClienteEmpresa(Integer codigo, Empresa empresa, long cpf, String nome, long telefone) {

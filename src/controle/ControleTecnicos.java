@@ -1,9 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package controle;
 
 import Persistencia.TecnicoDAO;
 import apresentacao.TelaCadastroTecnico;
 import entidade.Tecnico;
 
+/**
+ *
+ * @author Richard
+ */
 public class ControleTecnicos implements IControlador {
 
     private TelaCadastroTecnico telaCadastroTecnico;

@@ -1,9 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package entidade;
 
 import java.io.Serializable;
 import java.text.DateFormat;
 import java.util.Calendar;
 
+/**
+ *
+ * @author Richard
+ */
 public class RegistroChamado implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -13,8 +22,10 @@ public class RegistroChamado implements Serializable {
     private String assunto;
     private Tecnico tecnico;
     private Chamado chamado;
+
+    public RegistroChamado(){
     
-    public RegistroChamado(){}
+    }
 
     public RegistroChamado(String assunto, Chamado chamado, Tecnico tecnico) {
         Calendar c = Calendar.getInstance();

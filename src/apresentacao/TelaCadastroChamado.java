@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package apresentacao;
 
 import Persistencia.ClienteDAO;
@@ -23,6 +28,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+/**
+ *
+ * @author Richard
+ */
 public class TelaCadastroChamado extends JFrame {
 
     private Container container;
@@ -184,7 +193,7 @@ public class TelaCadastroChamado extends JFrame {
         cts.gridy = 3;
         container.add(cbBancoDados, cts);
 
-        lbProblemaDesempenho = new JLabel("Informar a operação: ");
+        lbProblemaDesempenho = new JLabel("Informar a opera��o: ");
         lbProblemaDesempenho.setVisible(false);
         cts.gridx = 0;
         cts.gridy = 3;
@@ -250,7 +259,7 @@ public class TelaCadastroChamado extends JFrame {
         tfPrioridade.addItem("Normal");
         tfPrioridade.addItem("Importante");
         tfPrioridade.addItem("Urgente");
-        tfPrioridade.addItem("Crítica");        
+        tfPrioridade.addItem("Cr�tica");        
         tfPrioridade.setPreferredSize(new Dimension(150, 20));
         cts.fill = GridBagConstraints.HORIZONTAL;
         cts.gridx = 1;
@@ -270,7 +279,7 @@ public class TelaCadastroChamado extends JFrame {
         cts.gridx = 1;
         cts.gridy = 8;
         container.add(cbSO, cts);
-        lbVersaoSO = new JLabel("Versão SO: ");
+        lbVersaoSO = new JLabel("Vers�o SO: ");
         cts.gridx = 0;
         cts.gridy = 9;
 
@@ -325,7 +334,7 @@ public class TelaCadastroChamado extends JFrame {
                 		prioridade = 2;
                 	}else if(tfPrioridade.getSelectedItem().equals("Urgente")){
                 		prioridade = 3;
-                	}else if(tfPrioridade.getSelectedItem().equals("Crítica")){
+                	}else if(tfPrioridade.getSelectedItem().equals("Cr�tica")){
                 		prioridade = 4;
                 	}
                 	
@@ -357,7 +366,7 @@ public class TelaCadastroChamado extends JFrame {
                 		prioridade = 2;
                 	}else if(tfPrioridade.getSelectedItem().equals("Urgente")){
                 		prioridade = 3;
-                	}else if(tfPrioridade.getSelectedItem().equals("Crítica")){
+                	}else if(tfPrioridade.getSelectedItem().equals("Cr�tica")){
                 		prioridade = 4;
                 	}
                 	
@@ -380,7 +389,7 @@ public class TelaCadastroChamado extends JFrame {
                 		prioridade = 2;
                 	}else if(tfPrioridade.getSelectedItem().equals("Urgente")){
                 		prioridade = 3;
-                	}else if(tfPrioridade.getSelectedItem().equals("Crítica")){
+                	}else if(tfPrioridade.getSelectedItem().equals("Cr�tica")){
                 		prioridade = 4;
                 	}
                 	
