@@ -9,6 +9,10 @@ public class ClienteEmpresa extends Pessoa implements Serializable {
     private Empresa empresa;
     private long cpf;
 
+    public ClienteEmpresa(){
+        
+    }
+    
     public ClienteEmpresa(Integer codigo, Empresa empresa, long cpf, String nome, long telefone) {
         super(nome, telefone);
         this.codigo = codigo;

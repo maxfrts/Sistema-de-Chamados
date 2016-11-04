@@ -96,6 +96,9 @@ public class Chamado implements Serializable {
         this.duracaoOperacao = tempoOperacao;
     }
 
+    public Chamado(){
+    }
+    
     public Tecnico getTecnico() {
         return tecnico;
     }
