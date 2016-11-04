@@ -1,4 +1,4 @@
-package entidade.teste;
+package teste;
 
 import entidade.Pessoa;
 import junit.framework.Assert;

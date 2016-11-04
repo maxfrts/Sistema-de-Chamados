@@ -1,4 +1,4 @@
-package entidade.teste;
+package teste;
 
 import entidade.RegistroChamado;
 import org.junit.Assert;
